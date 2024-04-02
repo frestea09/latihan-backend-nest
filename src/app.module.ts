@@ -10,7 +10,7 @@ import { ConfigModule } from '@nestjs/config';
   imports: [
     ConfigModule.forRoot(),
     UserModule,
-    MongooseModule.forRoot(process.env.DATABASE_URL),
+    // MongooseModule.forRoot(process.env.DATABASE_URL),
     CatsModule,
   ],
   controllers: [AppController],
